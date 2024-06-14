@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = ({Data}) => {
   return (
-        <div className="flex flex-col md:flex-row justify-between  border-8 bg-slate-200 border-slate-200 rounded-lg sm:w-11/12 w-[270px]  mx-auto shadow-sm shadow-black/30">
+        <div className="flex flex-col md:flex-row justify-between  border-8 bg-slate-200 border-slate-200 rounded-lg sm:w-11/12 w-[300px]  mx-auto shadow-sm shadow-black/30">
             <div className="flex flex-col md:flex-row items-center overflow-hidden sm:w-full">
                 <div className='p-5 h-full w-full  flex justify-center items-center bg-white rounded '>
                     <img src={Data.url} alt={Data.Data} className='object-contain w-[200px] h-[200px] hover:scale-110 duration-700'/>

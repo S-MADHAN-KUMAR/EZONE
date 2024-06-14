@@ -20,7 +20,7 @@ const HomeProduct = () => {
       : ProductsData.filter((product) => product.category === category);
   return (
     <div className=" rounded-xl mx-auto mt-40">
-      <div className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center w-fit gap-x-8 gap-y-10 pt-20 sm:ms-12 ">
+      <div className="flex flex-wrap md:flex-nowrap md:flex-row justify-center items-center w-fit gap-x-8 gap-y-10 pt-20 sm:ms-12 px-3 ">
         <button
           className={`hover:scale-105  sm:text-[23px] font-semibold text-black/85 pb-2  ${
             category === "all" ? "text-blue-500 border-b-[3px] border-blue-500" : ""
