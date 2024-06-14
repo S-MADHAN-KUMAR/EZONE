@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import LoaginCard from "../Cards/LoaginCard";
 import supabase from "../supabase";
 import { removeUser } from "../Slices/userSlice";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const [IsOpen, setIsOpen] = useState(false);
@@ -96,7 +97,7 @@ const Navbar = () => {
             </button>
           </div>
         </NavLink>
-        <div className="w-[250px] sm:w-[250px] md:w-1/4 relative bg-white rounded-full ">
+        <div className="w-[220px] sm:w-[250px] md:w-1/4 relative bg-white rounded-full ">
           <input
             type="text"
             placeholder="Search Products.."
@@ -108,10 +109,18 @@ const Navbar = () => {
         </div>
 
         <div className="md:hidden block">
-      <i  className="fa hover:scale-75 fa-bars text-yellow-400 fa-lg" onClick={toggleMenu} />
+       {
+        isMenuOpen ? (
+          <i class="fa fa-times hover:scale-75 text-yellow-400 fa-2x" onClick={toggleMenu} />
+        ) : (
+          <i  className="fa hover:scale-75 fa-bars text-yellow-400 fa-2x" onClick={toggleMenu} />
+        )
+       }   
+      
+     
 
       {isMenuOpen && (
-        <div className="fixed left-0 right-37 top-[60px] bottom-0 bg-black">
+        <div className="fixed left-0 right-37 top-[60px] bottom-0 bg-gray-950">
           <div className="flex flex-col px-8 py-10">
             <NavLink to={'/'}>
             <div className="flex items-center gap-x-2">

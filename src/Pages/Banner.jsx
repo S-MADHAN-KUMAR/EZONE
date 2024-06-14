@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = () => {
   return (
    <>
-   <div className="flex md:flex-row flex-col justify-between m-5 sm:mx-20">
+   <div className="flex md:flex-row flex-col justify-between  m-5 sm:mx-20">
    <div>
       <p className='text-4xl sm:text-6xl font-bold text-slate-900 mb-8'>Affordable Mobile Phones</p>
       <p className='sm:text-2xl text-black/60 font-medium w-4/5 mb-10'>Explore the latest models and best deals on smartphones at MobileSlaing.</p>

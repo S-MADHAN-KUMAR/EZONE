@@ -20,7 +20,7 @@ const BannerCarousel = () => {
         <Slider {...settings}>
         {Carousel.map((item) => (
           <div key={item.id}>
-            <img src={item.Imgsrc} alt="banner"  />
+            <img src={item.Imgsrc} alt="banner" className='sm:h-full h-[150px] w-full object-cover ' />
           </div>
         ))}
       </Slider>
