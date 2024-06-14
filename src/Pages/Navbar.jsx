@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
           </div>
         </NavLink>
-        <div className=" sm:w-[250px] md:w-1/4 relative bg-white rounded-full ">
+        <div className="w-[200px] sm:w-[250px] md:w-1/4 relative bg-white rounded-full ">
           <input
             type="text"
             placeholder="Search Products.."
