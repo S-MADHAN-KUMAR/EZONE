@@ -9,7 +9,7 @@ const CategoryBar2 = () => {
         {
             CategoryBarData2.map((item,index)=>(
               <Link to={'/Product'} >
-                <div key={index} className='w-[400px] h-fit overflow-hidden  relative rounded-lg shadow-sm shadow-black/20'>
+                <div key={index} className='w-[300px] sm:w-[400px] h-fit overflow-hidden  relative rounded-lg shadow-sm shadow-black/20'>
                     <img src={item.Imgsrc} alt={item.title} className=' w-full h-full hover:scale-150 duration-1000 '/>
                     <p className='text-2xl absolute top-12 left-6 font-medium text-wrap w-1/2  '>{item.title}</p>
                     <p className='absolute text-md text-black/70 top-36 left-6 '>From $ 399.00</p>

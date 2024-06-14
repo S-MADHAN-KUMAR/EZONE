@@ -29,7 +29,7 @@ const Cart = () => {
   
 
   return (
-    <div className="my-10">
+    <div className="my-10 overflow-x-hidden ">
 
 {/* cart */}
 
@@ -57,7 +57,7 @@ const Cart = () => {
         <p>{item.Proccessor}</p>
         </div>
       </div>
-      <div className='flex md:flex-col justify-around items-center p-5 h-full '>
+      <div className='flex md:flex-col justify-around items-center p-2 sm:p-5 h-full gap-x-5 '>
       <div className="flex justify-center items-center gap-x-2 ">
               <h1 className="text-[23px] text-black font-bold hover:scale-105">
                 EZONE
@@ -73,7 +73,7 @@ const Cart = () => {
     }
     </div>
     <div className="w-2/5 h-full">
-    <div className="flex flex-col justify-center items-center text-center mx-auto border-[6px] border-slate-200 w-[400px] rounded-lg shadow-md shadow-black/20">
+    <div className="flex flex-col justify-center items-center text-center mx-auto border-[6px] border-slate-200 w-[280px] sm:w-[400px] rounded-lg shadow-md shadow-black/20">
     <p className='text-2xl font-semibold text-center  w-full h-full my-8'>Order Summary</p>
     <div className="flex flex-col  w-full  h-full py-10 bg-slate-200  border-t-2 border-slate-200 ">
       <p className=' text-xl font-semibold text-black/90  mb-8'>Total Order : <span className={CartItems < 1 ? "text-red-600 ms-14  " : "text-green-500   ms-14  "} >{CartItems.length}</span></p>
@@ -83,7 +83,7 @@ const Cart = () => {
     </div>
    </div> </>) :(
     <div>
-      <div className="w-[350px] h-[350px] mx-auto ">
+      <div className="w-[300px] sm:w-[350px] h-[350px] mx-auto ">
         <img src="https://img.freepik.com/free-vector/man-shopping-supermarket_74855-7612.jpg" alt="no-cart" className="object-contain w-full h-full "/>
       </div>
       <p className="text-2xl font-semibold text-center mb-5 mt-8">Missing Cart items ?</p>

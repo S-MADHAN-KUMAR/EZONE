@@ -38,8 +38,8 @@ const LoaginCard = ({ IsOpen, setIsOpen }) => {
   return IsOpen ? (
     <div className="overlay z-50 bg-black/85 fixed bottom-0 top-0 left-0 right-0 flex flex-row justify-center items-center">
 
-      <div className="flex flex-row sm:h-[450px] h-[460px] p-1 rounded-lg w-[410px] bg-blue-300 sm:w-[650px] mx-auto  relative">
-        <div className="flex flex-col text-black w-1/3 h-full justify-between p-5 ">
+      <div className="flex flex-row sm:h-[450px] h-[460px] p-1 rounded-lg w-[300px] bg-blue-300 sm:w-[650px] mx-auto  relative ">
+        <div className="hidden sm:flex flex flex-col text-black w-1/3 h-full justify-between p-5 ">
           <p className="text-3xl font-semibold ">LOGIN</p>
           <p className="text-sm text-black/85 font-medium ">
             {" "}

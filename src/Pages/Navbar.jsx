@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
           </div>
         </NavLink>
-        <div className=" w-[300px] md:w-1/3 relative bg-white rounded-full ">
+        <div className=" sm:w-[300px] md:w-1/3 relative bg-white rounded-full ">
           <input
             type="text"
             placeholder="Search Products.."
@@ -108,11 +108,12 @@ const Navbar = () => {
         </div>
 
         <div className="md:hidden block">
-      <i className="fa fa-bars text-yellow-400 fa-lg" onClick={toggleMenu} />
+      <i  className="fa hover:scale-75 fa-bars text-yellow-400 fa-lg" onClick={toggleMenu} />
 
       {isMenuOpen && (
-        <div className="fixed left-0 right-40 top-[60px] bottom-0 bg-black">
+        <div className="fixed left-0 right-37 top-[60px] bottom-0 bg-black">
           <div className="flex flex-col px-8 py-10">
+            <NavLink to={'/'}>
             <div className="flex items-center gap-x-2">
               <h1 className="text-4xl text-white font-bold hover:scale-105">
                 EXXE
@@ -120,7 +121,7 @@ const Navbar = () => {
               <p className="bg-yellow-400 w-fit text-sm font-semibold px-2 rounded-full text-black">
                 SHOP
               </p>
-            </div>
+            </div></NavLink>
             <div className="text-white mt-16 mx-auto">
               {/* Login */}
               <div className="flex flex-row items-center mb-8 border-2 p-2 rounded-md border-gray-600 ">

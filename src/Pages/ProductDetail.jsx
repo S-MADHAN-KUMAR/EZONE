@@ -22,8 +22,8 @@ const ProductDetail = () => {
     <>
     <div className="flex flex-col lg:flex-row md:justify-around  w-full py-5 md:px-14">
       {/* left */}
-      <div className="flex flex-col justify-between gap-y-12 items-center  py-10  sm:p-10">
-        <div className="flex flex-row justify-between lg:gap-x-40  gap-x-20 items-center ">
+      <div className="flex flex-col justify-between gap-y-12 items-center  py-10   sm:p-10">
+        <div className="flex flex-row justify-between lg:gap-x-40 gap-x-10 sm:gap-x-20 items-center ">
         <div className="flex flex-col gap-y-4 justify-center items-center">
           <div className="w-20 h-20 border-2 border-black/50 rounded-md p-2 hover:outline outline-blue-300 outline-3 outline-offset-2">
           <img
@@ -61,12 +61,12 @@ const ProductDetail = () => {
         </div>
         </div>
         <div className="flex flex-row justify-between items-center gap-x-4 sm:gap-x-16">
-        <button onClick={addToCart} className="bg-orange-500 px-5 py-2 rounded-lg text-md md:text-xl text-white font-semibold">
-              <i className="fa fa-shopping-cart fa-lg mr-4" />
+        <button onClick={addToCart} className="bg-orange-500 px-5 py-2 rounded-lg text-xs md:text-xl text-white font-semibold">
+              <i className="fa fa-shopping-cart fa-lg mr-2" />
               ADD TO CART
             </button>
-            <button className="bg-black px-8 py-2 rounded-lg text-md md:text-xl text-white font-semibold">
-              <i className="fa fa-credit-card-alt fa-lg mr-6" />
+            <button className="bg-black px-8 py-2 rounded-lg text-xs sm:text-xl text-white font-semibold">
+              <i className="fa fa-credit-card-alt fa-lg mr-2" />
               BUY NOW
             </button>
         </div>

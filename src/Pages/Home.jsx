@@ -7,11 +7,14 @@ import BannerCarousel from '../Cards/BannerCarousel';
 
 const Home = () => {
   return <>
+  <div className='overflow-x-hidden ' >
   <BannerCarousel/>
   <CategoryBar/>
   <CategoryBar2/>
   <HomeProduct/>
+  </div>
   </>
+
 }
 
 export default Home
