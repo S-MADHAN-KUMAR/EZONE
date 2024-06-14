@@ -11,7 +11,7 @@ const Product = () => {
         <Banner/>
       </div>
       <div className=' flex flex-col justify-center w-full h-fit mx-auto gap-10 my-20'>
-        <p className='mb-10 text-3xl font-semibold ps-16 text-slate-800 '>Our Latest Mobiles</p>
+        <p className='mb-10 text-3xl font-semibold sm:ps-16 text-slate-800 '>Our Latest Mobiles</p>
         {
           ProductsData.map((item,index)=>(
           <Link key={index} to={`/ProductDetail/${item.id}`}>
