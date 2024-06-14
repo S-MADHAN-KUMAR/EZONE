@@ -92,11 +92,11 @@ const Navbar = () => {
                 <span className=" text-yellow-400 font-semibold text-lg ">
                   {CartItems.length}
                 </span>
-              )}
+       )}
             </button>
           </div>
         </NavLink>
-        <div className=" sm:w-[300px] md:w-1/3 relative bg-white rounded-full ">
+        <div className=" sm:w-[250px] md:w-1/4 relative bg-white rounded-full ">
           <input
             type="text"
             placeholder="Search Products.."
