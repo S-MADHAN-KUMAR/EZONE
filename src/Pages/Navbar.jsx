@@ -125,7 +125,7 @@ const Navbar = () => {
             <NavLink to={'/'}>
             <div className="flex items-center gap-x-2">
               <h1 className="text-4xl text-white font-bold hover:scale-105">
-                EXXE
+                EZONE
               </h1>
               <p className="bg-yellow-400 w-fit text-sm font-semibold px-2 rounded-full text-black">
                 SHOP
